@@ -3596,3 +3596,20 @@ button[onclick="logout()"]:hover {
     }
 
 }
+.admin-login-link {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 11px;
+    color: #89968f;
+}
+
+.admin-login-link a {
+    color: #57977e;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.admin-login-link a:hover {
+    text-decoration: underline;
+}
