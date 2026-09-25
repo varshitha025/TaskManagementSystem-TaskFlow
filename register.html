@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Register</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+            <div class="brand">
+                <div class="logo">✓</div>
+
+                <div>
+                    <h1>TaskFlow</h1>
+                    <p>Plan. Track. Achieve.</p>
+                </div>
+            </div>
+
+            <div class="illustration">
+
+                <div class="task-board">
+
+                    <h3>Build Your Workflow</h3>
+
+                    <p>✓ Create Tasks</p>
+                    <p>✓ Set Deadlines</p>
+                    <p>✓ Organize Projects</p>
+                    <p>○ Track Progress</p>
+
+                </div>
+
+            </div>
+
+            <h2>Everything in One Place</h2>
+
+            <p class="description">
+                Plan your work, organize your projects,
+                and stay on top of every deadline.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <span>✓</span>
+                    <p>Organize<br>Tasks</p>
+                </div>
+
+                <div>
+                    <span>▣</span>
+                    <p>Manage<br>Projects</p>
+                </div>
+
+                <div>
+                    <span>▥</span>
+                    <p>Monitor<br>Progress</p>
+                </div>
+
+                <div>
+                    <span>♟</span>
+                    <p>Never Miss<br>Deadlines</p>
+                </div>
+
+            </div>
+
+            <p class="quote">
+                Plan today. Accomplish tomorrow ♡
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+
+            <div class="form-box">
+
+                <div class="mobile-brand">
+
+                    <div class="logo">✓</div>
+
+                    <h1>TaskFlow</h1>
+
+                    <p>Plan. Track. Achieve.</p>
+
+                </div>
+
+
+                <h2>Create Account</h2>
+
+                <p class="subtext">
+                    Start organizing your work today
+                </p>
+
+
+                <form onsubmit="register(event)">
+
+                    <!-- NAME -->
+                    <label>Full Name</label>
+
+                    <div class="input-box">
+
+                        <span>👤</span>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+
+                        <span>✉</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <span>🔒</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="eye"
+                            onclick="togglePassword('password')">
+                            ◉
+                        </button>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+                    <label>Confirm Password</label>
+
+                    <div class="input-box">
+
+                        <span>🔒</span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required>
+
+                    </div>
+
+
+                    <!-- CREATE ACCOUNT -->
+                    <button
+                        type="submit"
+                        class="main-btn register-btn">
+                        Create Account →
+                    </button>
+
+
+                    <!-- OR -->
+                    <div class="or">
+
+                        <span></span>
+
+                        OR
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- LOGIN -->
+                    <p class="account">
+
+                        Already have an account?
+
+                        <a href="index.html">
+                            Login
+                        </a>
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

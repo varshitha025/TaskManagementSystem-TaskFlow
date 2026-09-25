@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Admin Tasks</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+
+                <h2>TaskFlow</h2>
+
+                <p>Admin Panel</p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-dashboard.html">
+
+                <span>⌂</span>
+                Dashboard
+
+            </a>
+
+
+            <a href="admin-users.html">
+
+                <span>♙</span>
+                Users
+
+            </a>
+
+
+            <a href="admin-tasks.html"
+               class="active">
+
+                <span>✓</span>
+                Tasks
+
+            </a>
+
+
+            <a href="admin-projects.html">
+
+                <span>▣</span>
+                Projects
+
+            </a>
+
+        </nav>
+
+
+        <button
+            class="logout-btn"
+            onclick="adminLogout()">
+
+            Logout
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard-main">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    ADMIN PANEL
+                </p>
+
+                <h1>
+                    Manage Tasks
+                </h1>
+
+                <p class="dashboard-subtext">
+                    Monitor all tasks and their deadlines.
+                </p>
+
+            </div>
+
+
+            <div class="admin-profile-circle">
+                A
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= TASKS ================= -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <h2>
+                        All Tasks
+                    </h2>
+
+                    <p>
+                        View the tasks created in TaskFlow.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="adminTaskList"
+                class="admin-list">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function() {
+
+            if (
+                localStorage.getItem("adminLoggedIn")
+                !== "true"
+            ) {
+
+                window.location.href =
+                    "admin-login.html";
+
+                return;
+
+            }
+
+            displayAdminTasks();
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>

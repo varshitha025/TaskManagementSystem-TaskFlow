@@ -1,0 +1,3598 @@
+/* =========================================================
+   TASKFLOW - COMPLETE STYLE SHEET
+   Plan. Track. Achieve.
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #34495e;
+    background: #f4f8f6;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   LOGIN + REGISTER
+   ========================================================= */
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    background: #f4f8f6;
+}
+
+
+/* LEFT SIDE */
+
+.left {
+    background: #e4f1eb;
+    padding: 55px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #57977e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.brand h1 {
+    font-size: 27px;
+    color: #34495e;
+}
+
+.brand p {
+    color: #6f8279;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+
+/* ILLUSTRATION */
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.task-board {
+    width: 340px;
+    background: white;
+    border-radius: 18px;
+    padding: 25px 28px;
+    box-shadow: 0 15px 35px rgba(50, 80, 65, 0.10);
+}
+
+.task-board h3 {
+    font-size: 17px;
+    margin-bottom: 18px;
+    color: #34495e;
+}
+
+.task-board p {
+    background: #f5f8f6;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 9px;
+    font-size: 12px;
+    color: #65766e;
+}
+
+.left > h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.description {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    color: #72827b;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 35px auto 25px;
+    max-width: 500px;
+}
+
+.features > div {
+    text-align: center;
+}
+
+.features span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 8px;
+    border-radius: 10px;
+    background: white;
+    color: #57977e;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(50, 80, 65, 0.07);
+}
+
+.features p {
+    color: #65766e;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.quote {
+    text-align: center;
+    color: #87958f;
+    font-size: 12px;
+}
+
+
+/* RIGHT SIDE */
+
+.right {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-box {
+    width: 420px;
+    max-width: 100%;
+}
+
+.mobile-brand {
+    display: none;
+}
+
+.form-box h2 {
+    color: #34495e;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtext {
+    color: #87958f;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+
+
+/* FORM */
+
+.form-box form {
+    width: 100%;
+}
+
+.form-box label {
+    display: block;
+    color: #4f625a;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 17px 0 7px;
+}
+
+.input-box {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #dce6e1;
+    border-radius: 9px;
+    padding: 0 13px;
+    background: white;
+    transition: 0.2s;
+}
+
+.input-box:focus-within {
+    border-color: #57977e;
+    box-shadow: 0 0 0 3px rgba(87, 151, 126, 0.08);
+}
+
+.input-box > span {
+    font-size: 15px;
+    color: #809089;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #34495e;
+    background: transparent;
+}
+
+.input-box input::placeholder {
+    color: #a5b0ac;
+}
+
+.eye {
+    border: none;
+    background: transparent;
+    color: #809089;
+    font-size: 15px;
+}
+
+
+/* BUTTON */
+
+.main-btn {
+    width: 100%;
+    height: 48px;
+    margin-top: 24px;
+    border: none;
+    border-radius: 9px;
+    background: #57977e;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.main-btn:hover {
+    background: #4b856d;
+    transform: translateY(-1px);
+}
+
+
+/* REMEMBER */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.remember {
+    display: flex !important;
+    align-items: center;
+    gap: 7px;
+    margin: 0 !important;
+    font-weight: 400 !important;
+    color: #7b8983 !important;
+}
+
+.remember input {
+    accent-color: #57977e;
+}
+
+
+/* ACCOUNT */
+
+.account {
+    text-align: center;
+    color: #87958f;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.account a {
+    color: #57977e;
+    font-weight: 700;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px 0 5px;
+    justify-content: center;
+    color: #a0aaa6;
+    font-size: 11px;
+}
+
+.or span {
+    height: 1px;
+    flex: 1;
+    background: #e5ebe8;
+}
+
+
+/* =========================================================
+   FORGOT PASSWORD
+   ========================================================= */
+
+.simple-page {
+    min-height: 100vh;
+    background: #e4f1eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.reset-box {
+    width: 420px;
+    max-width: 100%;
+    background: white;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(40, 70, 55, 0.12);
+}
+
+.reset-logo {
+    width: 50px;
+    height: 50px;
+    background: #57977e;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.reset-box h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.reset-box > p {
+    text-align: center;
+    color: #87958f;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.back-login {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #57977e;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   USER DASHBOARD
+   ========================================================= */
+
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+    background: #f4f8f6;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 235px;
+    min-height: 100vh;
+    background: white;
+    border-right: 1px solid #e3ebe7;
+    padding: 28px 18px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    margin-bottom: 35px;
+}
+
+.sidebar-brand .logo {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+}
+
+.sidebar-brand h2 {
+    font-size: 18px;
+    color: #34495e;
+}
+
+.sidebar-brand p {
+    font-size: 9px;
+    color: #8a9892;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sidebar nav a {
+    padding: 12px 14px;
+    border-radius: 8px;
+    color: #718078;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #e7f2ed;
+    color: #57977e;
+}
+
+
+/* MAIN */
+
+.dashboard-main {
+    margin-left: 235px;
+    width: calc(100% - 235px);
+    padding: 30px 40px;
+}
+
+
+/* HEADER */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 25px;
+    color: #34495e;
+}
+
+.dashboard-header p {
+    color: #8a9892;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #dceee6;
+    color: #57977e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+/* STATS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 13px;
+    padding: 22px;
+    border: 1px solid #e8efeb;
+}
+
+.stat-card h3 {
+    color: #89958f;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+    color: #34495e;
+}
+
+
+/* SECTIONS */
+
+.task-section,
+.project-section,
+.progress-section {
+    background: white;
+    border: 1px solid #e8efeb;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    color: #34495e;
+}
+
+
+/* ADD BUTTON */
+
+.add-btn {
+    border: none;
+    border-radius: 8px;
+    background: #57977e;
+    color: white;
+    padding: 10px 15px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.add-btn:hover {
+    background: #4b856d;
+}
+
+
+/* FORMS */
+
+.task-form,
+.project-form {
+    display: none;
+    background: #f5f9f7;
+    border-radius: 11px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.task-form.active,
+.project-form.active {
+    display: block;
+}
+
+.task-form input,
+.task-form select,
+.project-form input,
+.project-form textarea {
+    width: 100%;
+    border: 1px solid #dce6e1;
+    border-radius: 8px;
+    padding: 11px 12px;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.task-form textarea,
+.project-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.task-form input:focus,
+.task-form select:focus,
+.project-form input:focus,
+.project-form textarea:focus {
+    border-color: #57977e;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.form-buttons button {
+    border: none;
+    border-radius: 7px;
+    padding: 9px 15px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.save-btn {
+    background: #57977e;
+    color: white;
+}
+
+.cancel-btn {
+    background: #e7eeeb;
+    color: #65766e;
+}
+
+
+/* TASK LIST */
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    border: 1px solid #e7eeeb;
+    border-radius: 10px;
+}
+
+.task-item h3 {
+    font-size: 13px;
+    color: #34495e;
+    margin-bottom: 7px;
+}
+
+.task-item p {
+    font-size: 11px;
+    color: #89958f;
+    margin-bottom: 8px;
+}
+
+.priority,
+.task-project {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #eaf3ef;
+    color: #57977e;
+    font-size: 9px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.task-buttons button {
+    border: none;
+    border-radius: 6px;
+    padding: 7px 9px;
+    background: #e8efec;
+    color: #53655e;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.task-buttons .delete-btn {
+    background: #f8e8e8;
+    color: #bd6666;
+}
+
+.task-buttons .edit-btn {
+    background: #edf0f7;
+    color: #63708c;
+}
+
+.task-completed {
+    opacity: 0.65;
+}
+
+.task-completed h3 {
+    text-decoration: line-through;
+}
+
+
+/* EMPTY */
+
+.empty-task {
+    text-align: center;
+    padding: 35px 20px;
+    color: #8b9993;
+}
+
+.empty-task > div {
+    font-size: 30px;
+    color: #57977e;
+    margin-bottom: 10px;
+}
+
+.empty-task h3 {
+    font-size: 14px;
+    color: #596a63;
+    margin-bottom: 6px;
+}
+
+.empty-task p {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.project-card {
+    border: 1px solid #e7eeeb;
+    border-radius: 11px;
+    padding: 18px;
+}
+
+.project-card h3 {
+    color: #34495e;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.project-card > p {
+    color: #8a9892;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-progress-info {
+    display: flex;
+    justify-content: space-between;
+    color: #718078;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.project-progress-info strong {
+    color: #57977e;
+}
+
+.project-progress-bar {
+    height: 7px;
+    background: #e8efeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-progress-fill {
+    height: 100%;
+    background: #57977e;
+    border-radius: 10px;
+}
+
+.project-task-count {
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+}
+
+.project-card-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.project-card-buttons button {
+    border: none;
+    border-radius: 6px;
+    padding: 7px 11px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.project-edit {
+    background: #e9f0ed;
+    color: #57977e;
+}
+
+.project-delete {
+    background: #f8e8e8;
+    color: #bd6666;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress-section {
+    padding-bottom: 28px;
+}
+
+.progress-container {
+    margin-top: 10px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.progress-header span {
+    font-size: 11px;
+    color: #72827b;
+}
+
+.progress-header strong {
+    color: #57977e;
+    font-size: 12px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e6eeea;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background: #57977e;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   DELETE CONFIRMATION
+   ========================================================= */
+
+.task-confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(35, 50, 45, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    padding: 20px;
+}
+
+.task-confirm-box {
+    width: 360px;
+    max-width: 100%;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.20);
+}
+
+.confirm-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #e4f1eb;
+    color: #57977e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.task-confirm-box h2 {
+    color: #34495e;
+    font-size: 18px;
+}
+
+.confirm-question {
+    color: #596b65;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.confirm-text {
+    color: #929e99;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.confirm-buttons button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.confirm-cancel {
+    background: #e8efec;
+    color: #5e6e68;
+}
+
+.confirm-delete {
+    background: #c86d6d;
+    color: white;
+}
+
+
+/* =========================================================
+   DEADLINE POPUP
+   ========================================================= */
+
+/*
+   IMPORTANT:
+   Hidden by default.
+   JavaScript changes display to flex
+   ONLY when an actual deadline exists.
+*/
+
+#deadlineNotifications {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(35, 50, 45, 0.45);
+
+    padding: 20px;
+    z-index: 99999;
+}
+
+.deadline-popup {
+    width: 390px;
+    max-width: 100%;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.20);
+}
+
+.deadline-popup-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #e1efe9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.deadline-popup h2 {
+    color: #34495e;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.deadline-popup-description {
+    color: #89968f;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.deadline-task {
+    background: #f3f8f5;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 22px;
+}
+
+.deadline-task h3 {
+    color: #34495e;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.deadline-task p {
+    color: #718078;
+    font-size: 11px;
+}
+
+.deadline-popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.deadline-popup-buttons button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.deadline-close-btn {
+    background: #e8efec;
+    color: #596b65;
+}
+
+.deadline-view-btn {
+    background: #57977e;
+    color: white;
+}
+
+.deadline-close-btn:hover {
+    background: #dce6e1;
+}
+
+.deadline-view-btn:hover {
+    background: #4b856d;
+}
+
+
+/* =========================================================
+   ADMIN LOGIN
+   ========================================================= */
+
+.admin-login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4f1eb;
+    padding: 20px;
+}
+
+.admin-login-box {
+    width: 420px;
+    max-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 20px 55px rgba(40, 70, 55, 0.12);
+}
+
+.admin-login-box h1 {
+    color: #34495e;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.admin-login-box p {
+    color: #89958f;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   ADMIN DASHBOARD
+   ========================================================= */
+
+.admin-dashboard {
+    min-height: 100vh;
+    display: flex;
+    background: #f4f8f6;
+}
+
+.admin-sidebar {
+    width: 235px;
+    min-height: 100vh;
+    background: white;
+    border-right: 1px solid #e3ebe7;
+    padding: 28px 18px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.admin-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 30px;
+}
+
+.admin-sidebar nav a {
+    padding: 12px 14px;
+    border-radius: 8px;
+    color: #718078;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.admin-sidebar nav a:hover,
+.admin-sidebar nav a.active {
+    background: #e7f2ed;
+    color: #57977e;
+}
+
+.admin-main {
+    margin-left: 235px;
+    width: calc(100% - 235px);
+    padding: 30px 40px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-header h1 {
+    font-size: 25px;
+    color: #34495e;
+}
+
+.admin-header p {
+    font-size: 12px;
+    color: #89958f;
+    margin-top: 5px;
+}
+
+.admin-logout {
+    border: none;
+    background: #f8e8e8;
+    color: #bd6666;
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.admin-stat-card {
+    background: white;
+    border: 1px solid #e8efeb;
+    border-radius: 13px;
+    padding: 22px;
+}
+
+.admin-stat-card p {
+    color: #89958f;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.admin-stat-card strong {
+    font-size: 28px;
+    color: #34495e;
+}
+
+.admin-section {
+    background: white;
+    border: 1px solid #e8efeb;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.admin-section h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 18px;
+}
+
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #e8efeb;
+    border-radius: 9px;
+    padding: 14px;
+}
+
+.admin-list-item strong {
+    color: #34495e;
+    font-size: 12px;
+}
+
+.admin-list-item p {
+    color: #89958f;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.admin-list-item button {
+    border: none;
+    border-radius: 6px;
+    padding: 7px 10px;
+    background: #f8e8e8;
+    color: #bd6666;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        min-height: 100vh;
+    }
+
+    .mobile-brand {
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .mobile-brand .logo {
+        margin: 0 auto 10px;
+    }
+
+    .mobile-brand h1 {
+        font-size: 22px;
+        color: #34495e;
+    }
+
+    .mobile-brand p {
+        color: #87958f;
+        font-size: 11px;
+    }
+
+    .sidebar,
+    .admin-sidebar {
+        width: 190px;
+    }
+
+    .dashboard-main,
+    .admin-main {
+        margin-left: 190px;
+        width: calc(100% - 190px);
+        padding: 25px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .right {
+        padding: 25px 18px;
+    }
+
+    .sidebar,
+    .admin-sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #e3ebe7;
+    }
+
+    .dashboard,
+    .admin-dashboard {
+        display: block;
+    }
+
+    .dashboard-main,
+    .admin-main {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .stats,
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-header,
+    .admin-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .deadline-popup {
+        padding: 24px;
+    }
+
+}
+/* =========================================================
+   DASHBOARD BUTTON FIX
+   ========================================================= */
+
+/* Add Task button */
+.task-section button[onclick="showTaskForm()"],
+button[onclick="showTaskForm()"] {
+    border: none;
+    background: #57977e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.task-section button[onclick="showTaskForm()"]:hover,
+button[onclick="showTaskForm()"]:hover {
+    background: #4b856d;
+    transform: translateY(-1px);
+}
+
+
+/* Create Project button */
+.project-section button[onclick="showProjectForm()"],
+button[onclick="showProjectForm()"] {
+    border: none;
+    background: #57977e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.project-section button[onclick="showProjectForm()"]:hover,
+button[onclick="showProjectForm()"]:hover {
+    background: #4b856d;
+    transform: translateY(-1px);
+}
+
+
+/* Logout button */
+.sidebar button[onclick="logout()"],
+button[onclick="logout()"] {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #718078;
+    padding: 12px 14px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sidebar button[onclick="logout()"]:hover,
+button[onclick="logout()"]:hover {
+    background: #f8e8e8;
+    color: #bd6666;
+}
+/* =========================================================
+   TASKFLOW - ALL FORM BUTTONS
+   ========================================================= */
+
+.task-form button,
+.project-form button {
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 18px !important;
+    margin: 4px 6px 0 0 !important;
+
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+
+/* SAVE TASK / CREATE PROJECT */
+
+.task-form button:first-of-type,
+.project-form button:first-of-type {
+    background: #57977e !important;
+    color: #ffffff !important;
+}
+
+.task-form button:first-of-type:hover,
+.project-form button:first-of-type:hover {
+    background: #4b856d !important;
+    transform: translateY(-1px);
+}
+
+
+/* CANCEL */
+
+.task-form button:last-of-type,
+.project-form button:last-of-type {
+    background: #e8efec !important;
+    color: #596b65 !important;
+}
+
+.task-form button:last-of-type:hover,
+.project-form button:last-of-type:hover {
+    background: #dce6e1 !important;
+}
+
+
+/* BUTTON AREA */
+
+.task-form .form-buttons,
+.project-form .form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 5px;
+}
+/* =========================================================
+   FINAL DASHBOARD ALIGNMENT
+   ========================================================= */
+
+
+/* =========================
+   TASK CARD
+   ========================= */
+
+.task-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 18px 20px;
+}
+
+.task-item > div:first-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-item h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.task-item p {
+    margin-bottom: 8px;
+}
+
+
+/* TASK BUTTONS */
+
+.task-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px !important;
+    flex-shrink: 0;
+}
+
+.task-buttons button {
+    margin: 0 !important;
+    min-width: 60px;
+    padding: 8px 12px !important;
+    text-align: center;
+}
+
+
+/* =========================
+   PROJECT CARD
+   ========================= */
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+.project-card {
+    width: 100%;
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+}
+
+.project-card > p {
+    margin-bottom: 18px;
+}
+
+.project-progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.project-progress-bar {
+    width: 100%;
+}
+
+.project-card-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px !important;
+    margin-top: 15px;
+}
+
+.project-card-buttons button {
+    margin: 0 !important;
+    padding: 8px 14px !important;
+}
+
+
+/* =========================
+   PROGRESS BOX
+   ========================= */
+
+/* KEEP THE WHITE BOX */
+
+.progress-section {
+    background: white !important;
+    border: 1px solid #e8efeb !important;
+    border-radius: 14px !important;
+
+    padding: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+
+/* Progress title */
+
+.progress-section h2 {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.progress-section > p {
+    color: #718078;
+    font-size: 13px;
+}
+
+
+/* Progress area */
+
+.progress-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Progress percentage row */
+
+.progress-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.progress-header span {
+    color: #596b65;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.progress-header strong {
+    color: #57977e;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* Progress bar */
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e1eae5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #57977e;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+
+/* =========================
+   SECTION ALIGNMENT
+   ========================= */
+
+.task-section,
+.project-section,
+.progress-section {
+    width: 100%;
+}
+
+.section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .task-buttons {
+        justify-content: flex-start;
+        gap: 8px !important;
+    }
+
+    .project-card-buttons {
+        gap: 8px !important;
+    }
+}
+/* =========================================================
+   TASKFLOW - FINAL SECTION SPACING
+   ========================================================= */
+
+
+/* =========================
+   MY TASKS
+   ========================= */
+
+.task-section .section-header,
+.project-section .section-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+}
+
+
+/* Title */
+.task-section .section-header h2,
+.project-section .section-header h2 {
+    margin: 0 0 6px 0 !important;
+}
+
+
+/* Description */
+.task-section .section-header p,
+.project-section .section-header p {
+    margin: 0 0 20px 0 !important;
+    line-height: 1.5 !important;
+}
+
+
+/* Add Task / Create Project */
+.task-section .add-btn,
+.project-section .add-btn {
+    margin: 0 0 20px 0 !important;
+}
+
+
+/* Space between button and added cards */
+.task-section .task-list,
+.project-section .project-list {
+    margin-top: 20px !important;
+}
+
+
+/* =========================================================
+   EXTRA SPACE BEFORE ADDED TASK / PROJECT
+   ========================================================= */
+
+.task-section .task-list .task-item,
+.project-section .project-list .project-card {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress-section h2 {
+    margin: 0 0 6px 0 !important;
+}
+
+.progress-section > p {
+    margin: 0 0 20px 0 !important;
+}
+
+.progress-container {
+    margin-top: 0 !important;
+}
+/* =========================================================
+   TASKFLOW - EXACT SECTION SPACING
+   ========================================================= */
+
+/* MY TASKS / MY PROJECTS HEADING */
+.task-section .section-heading,
+.project-section .section-heading {
+    display: block !important;
+}
+
+/* TITLE */
+.task-section .section-heading h2,
+.project-section .section-heading h2 {
+    margin: 0 0 8px 0 !important;
+}
+
+/* DESCRIPTION */
+.task-section .section-heading p,
+.project-section .section-heading p {
+    margin: 0 0 20px 0 !important;
+}
+
+/* ADD TASK / CREATE PROJECT BUTTON */
+.task-section .add-task-btn,
+.project-section .add-project-btn {
+    display: inline-block !important;
+    margin: 0 0 20px 0 !important;
+}
+
+/* SPACE BEFORE TASKS */
+.task-section .task-list {
+    margin-top: 0 !important;
+}
+
+/* SPACE BEFORE PROJECTS */
+.project-section .project-list {
+    margin-top: 0 !important;
+}
+/* =========================================================
+   FINAL PROGRESS BOX
+   ========================================================= */
+
+.progress-box {
+    display: block !important;
+
+    width: 100% !important;
+
+    background: #f7faf8 !important;
+
+    border: 1px solid #e3ece7 !important;
+    border-radius: 12px !important;
+
+    padding: 20px 22px !important;
+
+    margin-top: 20px !important;
+
+    box-sizing: border-box !important;
+
+    box-shadow: 0 4px 12px rgba(52, 73, 94, 0.06) !important;
+}
+
+
+/* Percentage row */
+
+.progress-box .progress-info {
+    display: flex !important;
+
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    width: 100% !important;
+
+    margin-bottom: 12px !important;
+}
+
+.progress-box .progress-info span {
+    color: #596b65 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+.progress-box .progress-info strong {
+    color: #57977e !important;
+    font-size: 15px !important;
+}
+
+
+/* Progress bar */
+
+.progress-box .progress-bar {
+    width: 100% !important;
+    height: 10px !important;
+
+    background: #e1eae5 !important;
+
+    border-radius: 20px !important;
+    overflow: hidden !important;
+}
+
+.progress-box .progress-fill {
+    height: 100% !important;
+
+    background: #57977e !important;
+
+    border-radius: 20px !important;
+
+    transition: width 0.4s ease !important;
+}
+/* =====================================================
+   ADMIN DASHBOARD
+   ===================================================== */
+
+.admin-welcome-card {
+    background: #f2f8f5;
+    border: 1px solid #dce9e2;
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin-top: 28px;
+}
+
+.admin-welcome-card h2 {
+    margin: 12px 0 8px;
+    color: #263a32;
+    font-size: 22px;
+}
+
+.admin-welcome-card p {
+    margin: 0;
+    color: #687871;
+    font-size: 14px;
+}
+
+.admin-badge {
+    display: inline-block;
+    padding: 6px 11px;
+    background: #dceee5;
+    color: #57977e;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.admin-quick-section {
+    margin-top: 32px;
+}
+
+.admin-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.admin-quick-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e3ece7;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.admin-quick-card:hover {
+    transform: translateY(-3px);
+    border-color: #b9d4c6;
+    box-shadow: 0 8px 20px rgba(52, 73, 94, 0.08);
+}
+
+.quick-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf6f1;
+    color: #57977e;
+    border-radius: 11px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.admin-quick-card h3 {
+    margin: 2px 0 6px;
+    color: #2f4039;
+    font-size: 15px;
+}
+
+.admin-quick-card p {
+    margin: 0;
+    color: #7a8983;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.quick-arrow {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    color: #57977e;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ADMIN SIDEBAR */
+
+.sidebar-brand p {
+    margin: 2px 0 0;
+    color: #8a9992;
+    font-size: 11px;
+}
+
+.sidebar-nav a span {
+    width: 22px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .admin-quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   ADMIN LOGIN
+   ===================================================== */
+
+.admin-label {
+    display: inline-block;
+    padding: 6px 11px;
+    background: #e4f1eb;
+    color: #57977e;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    margin-bottom: 14px;
+}
+
+.back-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-login a {
+    color: #57977e;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.back-login a:hover {
+    text-decoration: underline;
+}
+/* =====================================================
+   ADMIN LOGIN - SAME STYLE AS USER LOGIN
+   ===================================================== */
+
+.admin-login-page {
+    min-height: 100vh;
+}
+
+
+/* ================= LEFT SIDE ================= */
+
+.admin-login-page .left {
+    min-height: 100vh;
+}
+
+.admin-login-page .left-content {
+    width: 100%;
+}
+
+
+/* ADMIN TASK BOARD */
+
+.admin-login-page .task-board {
+    margin-top: 30px;
+}
+
+
+/* MAIN HEADING */
+
+.admin-login-page .left-content h1 {
+    margin-top: 34px;
+}
+
+
+/* DESCRIPTION */
+
+.admin-login-page .left-description {
+    max-width: 560px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.admin-features {
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 42px;
+    margin-top: 48px;
+}
+
+
+.admin-features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+
+.admin-features .feature-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    box-shadow: 0 6px 15px rgba(52, 73, 94, 0.07);
+}
+
+
+.admin-features .feature span {
+    display: block;
+
+    color: #63756f;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+
+    white-space: nowrap;
+}
+
+
+/* QUOTE */
+
+.admin-login-page .quote {
+    margin-top: 42px;
+}
+
+
+/* ================= RIGHT SIDE ================= */
+
+.admin-right {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* FORM CONTAINER */
+
+.admin-form-container {
+    width: 100%;
+    max-width: 430px;
+}
+
+
+/* ADMIN BADGE */
+
+.admin-label {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    background: #e3f1eb;
+    color: #57977e;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 18px;
+}
+
+
+/* HEADING */
+
+.admin-form-container h1 {
+    margin: 0 0 10px;
+
+    color: #34495e;
+
+    font-size: 34px;
+    font-weight: 800;
+}
+
+
+/* DESCRIPTION */
+
+.admin-form-container .form-description {
+    margin-bottom: 30px;
+
+    color: #71817b;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* LABELS */
+
+.admin-form-container form > label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #465951;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* INPUTS */
+
+.admin-form-container input[type="email"],
+.admin-form-container input[type="password"] {
+
+    width: 100%;
+    height: 48px;
+
+    box-sizing: border-box;
+
+    padding: 0 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #dce7e2;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #34495e;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.admin-form-container input[type="email"]:focus,
+.admin-form-container input[type="password"]:focus {
+
+    border-color: #57977e;
+
+    box-shadow: 0 0 0 3px rgba(87, 151, 126, 0.10);
+}
+
+
+/* PLACEHOLDER */
+
+.admin-form-container input::placeholder {
+    color: #a1aea9;
+}
+
+
+/* ================= REMEMBER ME ================= */
+
+.admin-login-options {
+    display: flex;
+    align-items: center;
+
+    margin-top: -4px;
+    margin-bottom: 22px;
+}
+
+
+.remember-admin {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+
+    margin: 0 !important;
+
+    color: #71817b;
+
+    font-size: 13px !important;
+    font-weight: 500 !important;
+
+    cursor: pointer;
+}
+
+
+.remember-admin input {
+    width: 15px !important;
+    height: 15px !important;
+
+    margin: 0 !important;
+
+    accent-color: #57977e;
+}
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.admin-login-btn {
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #57977e;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.admin-login-btn:hover {
+    background: #4b856d;
+    transform: translateY(-1px);
+}
+
+
+/* ================= BACK TO LOGIN ================= */
+
+.back-login {
+    text-align: center;
+
+    margin-top: 24px;
+}
+
+
+.back-login a {
+    color: #57977e;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.back-login a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .admin-login-page {
+        flex-direction: column;
+    }
+
+    .admin-login-page .left,
+    .admin-login-page .right {
+        width: 100%;
+    }
+
+    .admin-login-page .left {
+        min-height: auto;
+        padding: 50px 30px;
+    }
+
+    .admin-right {
+        min-height: 600px;
+        padding: 50px 30px;
+    }
+
+    .admin-features {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+/* =====================================================
+   ADMIN DASHBOARD FINAL LAYOUT
+   ===================================================== */
+
+
+/* WELCOME CARD FIRST */
+
+.admin-welcome-card {
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
+}
+
+
+/* ADMIN STATISTICS */
+
+.admin-stats-section {
+    margin-bottom: 30px;
+}
+
+
+.admin-stats-section .stats {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, 1fr) !important;
+
+    gap: 18px !important;
+
+    margin-bottom: 0 !important;
+}
+
+
+/* STAT CARD */
+
+.admin-stats-section .stat-card {
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-height: 100px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e3ece7;
+
+    border-radius: 13px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 4px 12px rgba(52, 73, 94, 0.04);
+}
+
+
+/* STAT ICON */
+
+.admin-stats-section .stat-icon {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #edf6f1;
+
+    color: #57977e;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+/* STAT TITLE */
+
+.admin-stats-section .stat-card h3 {
+    margin: 0 0 5px;
+
+    color: #718078;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* STAT NUMBER */
+
+.admin-stats-section .stat-card strong {
+    color: #34495e;
+
+    font-size: 27px;
+
+    font-weight: 700;
+}
+
+
+/* QUICK ACCESS */
+
+.admin-quick-section {
+    margin-top: 0 !important;
+}
+
+
+.admin-quick-section > h2 {
+    color: #34495e;
+
+    font-size: 25px;
+
+    margin: 0 0 4px;
+}
+
+
+/* ADMIN LOGOUT */
+
+.sidebar .logout-btn {
+    width: 100%;
+
+    padding: 11px 14px;
+
+    margin-top: auto;
+
+    border: 1px solid #dce5e1;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #68776f;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.sidebar .logout-btn:hover {
+    background: #e7f2ed;
+
+    color: #57977e;
+
+    border-color: #cfe1d9;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .admin-stats-section .stats {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+/* =====================================================
+   LOGOUT CONFIRMATION POPUP
+   ===================================================== */
+
+.logout-confirm-overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(35, 50, 45, 0.45);
+
+    z-index: 999999;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* POPUP */
+
+.logout-confirm-box {
+
+    width: 390px;
+    max-width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.20);
+
+    animation: logoutPopupShow 0.25s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.logout-confirm-icon {
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e1efe9;
+
+    border-radius: 15px;
+
+    color: #57977e;
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+
+/* TITLE */
+
+.logout-confirm-box h2 {
+
+    color: #34495e;
+
+    font-size: 21px;
+
+    margin: 0 0 8px;
+}
+
+
+/* QUESTION */
+
+.logout-question {
+
+    color: #34495e;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin: 0 0 7px;
+}
+
+
+/* MESSAGE */
+
+.logout-message {
+
+    color: #89968f;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    margin: 0 0 22px;
+}
+
+
+/* BUTTONS */
+
+.logout-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.logout-buttons button {
+
+    border: none;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* NO */
+
+.logout-no {
+
+    background: #e8efec;
+
+    color: #596b65;
+}
+
+
+.logout-no:hover {
+
+    background: #dce6e1;
+}
+
+
+/* YES */
+
+.logout-yes {
+
+    background: #57977e;
+
+    color: #ffffff;
+}
+
+
+.logout-yes:hover {
+
+    background: #4b856d;
+}
+
+
+/* ANIMATION */
+
+@keyframes logoutPopupShow {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.90);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+/* ============================= */
+/* PROFILE POPUP */
+/* ============================= */
+
+.profile-circle {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+.profile-circle:hover {
+    transform: scale(1.05);
+}
+
+
+/* OVERLAY */
+
+.profile-overlay {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(35, 50, 45, 0.45);
+
+    z-index: 999999;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* POPUP */
+
+.profile-popup {
+    position: relative;
+
+    width: 420px;
+    max-width: 100%;
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.20);
+
+    animation: profilePopupShow 0.25s ease;
+}
+
+
+/* CLOSE */
+
+.profile-close {
+    position: absolute;
+
+    top: 14px;
+    right: 17px;
+
+    border: none;
+    background: transparent;
+
+    color: #89968f;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.profile-close:hover {
+    color: #34495e;
+}
+
+
+/* PROFILE PICTURE */
+
+.profile-picture {
+    width: 75px;
+    height: 75px;
+
+    margin: 5px auto 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f2ed;
+
+    border-radius: 50%;
+
+    color: #57977e;
+
+    font-size: 30px;
+
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* NAME + EMAIL */
+
+.profile-popup > h2 {
+    margin: 0 0 5px;
+
+    color: #34495e;
+
+    font-size: 21px;
+}
+
+.profile-popup > p {
+    margin: 0 0 18px;
+
+    color: #89968f;
+
+    font-size: 12px;
+}
+
+
+/* UPLOAD */
+
+.profile-upload {
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    margin-bottom: 20px;
+
+    background: #edf6f1;
+
+    color: #57977e;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.profile-upload:hover {
+    background: #e1efe9;
+}
+
+.profile-upload input {
+    display: none;
+}
+
+
+/* DETAILS */
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.profile-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 13px 15px;
+
+    background: #f7faf8;
+
+    border: 1px solid #e3ece7;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.profile-detail span {
+    color: #89968f;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.profile-detail strong {
+    color: #34495e;
+
+    font-size: 12px;
+
+    max-width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* CHANGE PASSWORD */
+
+.change-password-section {
+    padding-top: 18px;
+
+    border-top: 1px solid #e5ece8;
+
+    text-align: left;
+}
+
+.change-password-section h3 {
+    margin: 0 0 12px;
+
+    color: #34495e;
+
+    font-size: 14px;
+}
+
+.change-password-section input {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    margin-bottom: 9px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dce5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 12px;
+}
+
+.change-password-section input:focus {
+    border-color: #57977e;
+}
+
+
+/* BUTTONS */
+
+.change-password-btn,
+.profile-done-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 11px;
+
+    border-radius: 8px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.change-password-btn {
+    background: #57977e;
+    color: #ffffff;
+}
+
+.change-password-btn:hover {
+    background: #4b856d;
+}
+
+.profile-done-btn {
+    margin-top: 10px;
+
+    background: #e8efec;
+    color: #596b65;
+}
+
+.profile-done-btn:hover {
+    background: #dce6e1;
+}
+
+
+/* ANIMATION */
+
+@keyframes profilePopupShow {
+
+    from {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+.profile-circle {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: #e7f2ed;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-circle:hover {
+    transform: scale(1.05);
+}
+/* ================= ADMIN TASK ACTIONS ================= */
+
+.admin-task-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.admin-task-actions button {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-complete-btn {
+    background: #e7f2ed;
+    color: #57977e;
+}
+
+.admin-complete-btn:hover {
+    background: #d9ebe3;
+}
+
+.admin-edit-btn {
+    background: #eef2f6;
+    color: #5f7080;
+}
+
+.admin-edit-btn:hover {
+    background: #e2e8ed;
+}
+
+.admin-delete-btn {
+    background: #f8e8e8;
+    color: #bd6666;
+}
+
+.admin-delete-btn:hover {
+    background: #f3dada;
+}
+/* ================= ADMIN PROJECT ACTIONS ================= */
+
+.admin-project-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.admin-project-actions button {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-project-actions .admin-edit-btn {
+    background: #eef2f6;
+    color: #5f7080;
+}
+
+.admin-project-actions .admin-edit-btn:hover {
+    background: #e2e8ed;
+}
+
+.admin-project-actions .admin-delete-btn {
+    background: #f8e8e8;
+    color: #bd6666;
+}
+
+.admin-project-actions .admin-delete-btn:hover {
+    background: #f3dada;
+}
+/* =====================================================
+   ADMIN TASK / PROJECT MODALS
+   ===================================================== */
+
+.admin-modal-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(35, 50, 45, 0.45);
+
+    z-index: 999999;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.admin-modal {
+    position: relative;
+
+    width: 430px;
+    max-width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.20);
+
+    animation: adminModalShow 0.25s ease;
+}
+
+
+.admin-modal-close {
+    position: absolute;
+
+    top: 12px;
+    right: 16px;
+
+    border: none;
+    background: transparent;
+
+    color: #89968f;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+.admin-modal-close:hover {
+    color: #34495e;
+}
+
+
+/* GREEN ICON */
+
+.admin-modal-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 3px auto 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e1efe9;
+
+    border-radius: 15px;
+
+    color: #57977e;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* DELETE ICON */
+
+.admin-delete-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 3px auto 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8e8e8;
+
+    border-radius: 15px;
+
+    color: #bd6666;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.admin-modal h2 {
+    margin: 0 0 7px;
+
+    color: #34495e;
+
+    font-size: 21px;
+}
+
+
+.admin-modal-subtitle {
+    margin: 0 0 20px;
+
+    color: #89968f;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.admin-modal-subtitle strong {
+    color: #34495e;
+}
+
+
+/* FORM */
+
+.admin-modal-form {
+    text-align: left;
+}
+
+
+.admin-modal-form label {
+    display: block;
+
+    margin: 0 0 7px;
+
+    color: #596b65;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+.admin-modal-form input,
+.admin-modal-form textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dce5e1;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #34495e;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    margin-bottom: 16px;
+}
+
+
+.admin-modal-form input {
+    height: 43px;
+
+    padding: 0 12px;
+}
+
+
+.admin-modal-form textarea {
+    padding: 11px 12px;
+
+    resize: vertical;
+}
+
+
+.admin-modal-form input:focus,
+.admin-modal-form textarea:focus {
+    border-color: #57977e;
+
+    box-shadow:
+        0 0 0 3px rgba(87, 151, 126, 0.10);
+}
+
+
+/* BUTTONS */
+
+.admin-modal-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 9px;
+
+    margin-top: 5px;
+}
+
+
+.admin-modal-buttons button {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 18px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.admin-modal-cancel {
+    background: #e8efec;
+
+    color: #596b65;
+}
+
+
+.admin-modal-cancel:hover {
+    background: #dce6e1;
+}
+
+
+.admin-modal-save {
+    background: #57977e;
+
+    color: #ffffff;
+}
+
+
+.admin-modal-save:hover {
+    background: #4b856d;
+}
+
+
+/* DELETE */
+
+.admin-warning {
+    margin: -8px 0 22px;
+
+    color: #bd6666;
+
+    font-size: 11px;
+}
+
+
+.admin-delete-confirm {
+    background: #bd6666;
+
+    color: #ffffff;
+}
+
+
+.admin-delete-confirm:hover {
+    background: #aa5858;
+}
+
+
+/* ANIMATION */
+
+@keyframes adminModalShow {
+
+    from {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+/* =====================================================
+   ADMIN PROFILE CIRCLE
+   ===================================================== */
+
+.admin-profile-circle {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #e7f2ed;
+    color: #57977e;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    border: 1px solid #dce9e2;
+
+    box-sizing: border-box;
+}
+
+
+/* Responsive Admin Header */
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.dashboard-header > div:first-child {
+    min-width: 0;
+    flex: 1;
+}
+
+
+.dashboard-header h1 {
+    overflow-wrap: anywhere;
+}
+
+
+@media (max-width: 700px) {
+
+    .dashboard-main {
+        padding: 25px 18px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+    }
+
+    .admin-profile-circle {
+        width: 38px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .dashboard-header {
+        gap: 12px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 22px;
+    }
+
+    .dashboard-subtext {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+}

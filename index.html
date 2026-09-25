@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+            <div class="brand">
+                <span class="logo">✓</span>
+
+                <div>
+                    <h1>TaskFlow</h1>
+                    <p>Plan. Track. Achieve.</p>
+                </div>
+            </div>
+
+            <div class="illustration">
+
+                <div class="task-board">
+                    <h3>Today's Tasks</h3>
+                    <p>✓ Complete Assignment</p>
+                    <p>✓ Team Meeting</p>
+                    <p>○ Project Work</p>
+                    <p>○ Review Tasks</p>
+                </div>
+
+            </div>
+
+            <h2>Your Tasks, Our Priority</h2>
+
+            <p class="description">
+                Stay organized, manage your projects,
+                and turn your goals into progress.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <span>✓</span>
+                    <p>Manage<br>Tasks</p>
+                </div>
+
+                <div>
+                    <span>📁</span>
+                    <p>Handle<br>Projects</p>
+                </div>
+
+                <div>
+                    <span>📊</span>
+                    <p>Track<br>Progress</p>
+                </div>
+
+                <div>
+                    <span>🔔</span>
+                    <p>Get<br>Reminders</p>
+                </div>
+
+            </div>
+
+            <p class="quote">
+                Small steps lead to big goals ♡
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+
+            <div class="form-box">
+
+                <div class="mobile-brand">
+                    <span class="logo">✓</span>
+                    <h1>TaskFlow</h1>
+                    <p>Plan. Track. Achieve.</p>
+                </div>
+
+                <h2>Welcome Back!</h2>
+
+                <p class="subtext">
+                    Log in to continue your journey
+                </p>
+
+                <form onsubmit="login(event)">
+
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+                        <span>✉</span>
+
+                        <input type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <span>🔒</span>
+
+                        <input type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            required>
+
+                        <button type="button"
+                            class="eye"
+                            onclick="togglePassword('loginPassword')">
+                            ◉
+                        </button>
+
+                    </div>
+
+
+                    <div class="options">
+
+                        <label class="remember">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                    </div>
+
+
+                    <button type="submit" class="main-btn">
+                        Login →
+                    </button>
+
+                </form>
+
+
+                <p class="account">
+                    Don't have an account?
+                    <a href="register.html">Register</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

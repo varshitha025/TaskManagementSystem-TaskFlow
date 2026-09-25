@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+
+                <h2>TaskFlow</h2>
+
+                <p>Admin Panel</p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-dashboard.html"
+               class="active">
+
+                <span>⌂</span>
+                Dashboard
+
+            </a>
+
+
+            <a href="admin-users.html">
+
+                <span>♙</span>
+                Users
+
+            </a>
+
+
+            <a href="admin-tasks.html">
+
+                <span>✓</span>
+                Tasks
+
+            </a>
+
+
+            <a href="admin-projects.html">
+
+                <span>▣</span>
+                Projects
+
+            </a>
+
+        </nav>
+
+
+        <!-- SAME STYLE AS USER DASHBOARD -->
+
+        <button
+            class="logout-btn"
+            onclick="adminLogout()">
+
+            Logout
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard-main">
+
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    ADMIN PANEL
+                </p>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+                <p class="dashboard-subtext">
+                    Manage users, tasks and projects from one place.
+                </p>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="admin-profile-circle">
+                    A
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="admin-welcome-card">
+
+            <span class="admin-badge">
+                ADMIN
+            </span>
+
+            <h2>
+                Welcome to TaskFlow Admin
+            </h2>
+
+            <p>
+                Monitor your TaskFlow system and manage
+                users, tasks and projects efficiently.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="admin-stats-section">
+
+            <div class="stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Users
+                        </h3>
+
+                        <strong id="adminUsers">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Tasks
+                        </h3>
+
+                        <strong id="adminTasks">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Projects
+                        </h3>
+
+                        <strong id="adminProjects">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUICK ACCESS ================= -->
+
+        <section class="admin-quick-section">
+
+            <h2>
+                Quick Access
+            </h2>
+
+            <p class="dashboard-subtext">
+                Manage different parts of the system.
+            </p>
+
+
+            <div class="admin-quick-grid">
+
+
+                <a href="admin-users.html"
+                   class="admin-quick-card">
+
+                    <div class="quick-icon">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Manage Users
+                        </h3>
+
+                        <p>
+                            View and manage registered users.
+                        </p>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <a href="admin-tasks.html"
+                   class="admin-quick-card">
+
+                    <div class="quick-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            View Tasks
+                        </h3>
+
+                        <p>
+                            Monitor tasks and their deadlines.
+                        </p>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <a href="admin-projects.html"
+                   class="admin-quick-card">
+
+                    <div class="quick-icon">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            View Projects
+                        </h3>
+
+                        <p>
+                            Check all projects created in TaskFlow.
+                        </p>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

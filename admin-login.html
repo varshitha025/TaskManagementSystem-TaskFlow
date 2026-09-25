@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Admin Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="page admin-login-page">
+
+    <!-- ================= LEFT SIDE ================= -->
+
+    <div class="left">
+
+        <!-- BRAND -->
+
+        <div class="brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+                <h2>TaskFlow</h2>
+                <p>Plan. Track. Achieve.</p>
+            </div>
+
+        </div>
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="left-content">
+
+            <!-- TASK BOARD -->
+
+            <div class="task-board">
+
+                <h3>Admin Control</h3>
+
+                <div class="board-task">
+                    <span>✓</span>
+                    Manage Users
+                </div>
+
+                <div class="board-task">
+                    <span>✓</span>
+                    Monitor Tasks
+                </div>
+
+                <div class="board-task">
+                    <span>○</span>
+                    Manage Projects
+                </div>
+
+                <div class="board-task">
+                    <span>○</span>
+                    Track Activity
+                </div>
+
+            </div>
+
+
+            <!-- MAIN TEXT -->
+
+            <h1>
+                Manage Your<br>
+                Workspace
+            </h1>
+
+            <p class="left-description">
+                Keep your workspace organized, monitor activity,
+                and manage TaskFlow smoothly.
+            </p>
+
+
+            <!-- FEATURES -->
+
+            <div class="features admin-features">
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <span>
+                        Manage<br>
+                        Users
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        📁
+                    </div>
+
+                    <span>
+                        Handle<br>
+                        Projects
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        📊
+                    </div>
+
+                    <span>
+                        Monitor<br>
+                        Tasks
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🔔
+                    </div>
+
+                    <span>
+                        Track<br>
+                        Activity
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUOTE -->
+
+            <p class="quote">
+                Keep everything on track ♡
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= RIGHT SIDE ================= -->
+
+    <div class="right admin-right">
+
+        <div class="form-container admin-form-container">
+
+            <div class="admin-label">
+                ADMIN ACCESS
+            </div>
+
+
+            <h1>
+                Welcome, Admin
+            </h1>
+
+
+            <p class="form-description">
+                Login to manage your TaskFlow workspace.
+            </p>
+
+
+            <!-- LOGIN FORM -->
+
+            <form onsubmit="adminLogin(event)">
+
+                <label for="adminEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Enter admin email"
+                    required
+                >
+
+
+                <label for="adminPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <div class="admin-login-options">
+
+                    <label class="remember-admin">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="login-btn admin-login-btn">
+                    Login as Admin
+                </button>
+
+            </form>
+
+
+            <p class="back-login">
+                <a href="index.html">
+                    ← Back to User Login
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
