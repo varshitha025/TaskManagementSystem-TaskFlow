@@ -3596,20 +3596,30 @@ button[onclick="logout()"]:hover {
     }
 
 }
+
+/* ADMIN LOGIN LINK */
+
 .admin-login-link {
-    margin-top: 18px;
+    width: 100%;
+    margin-top: 14px;
     text-align: center;
+    font-family: 'Inter', sans-serif;
     font-size: 11px;
+    line-height: 1.5;
+}
+
+.admin-login-link span {
     color: #89968f;
 }
 
 .admin-login-link a {
     color: #57977e;
-    font-weight: 700;
     text-decoration: none;
+    font-weight: 700;
     margin-left: 4px;
 }
 
 .admin-login-link a:hover {
+    color: #4b856d;
     text-decoration: underline;
 }
