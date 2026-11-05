@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - My Tasks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="side-brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+                <h2>TaskFlow</h2>
+                <p>Plan. Track. Achieve.</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="user-dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="my-tasks.html" class="active">
+                <span>✓</span>
+                My Tasks
+            </a>
+
+            <a href="projects.html">
+                <span>▣</span>
+                Projects
+            </a>
+
+            <a href="progress.html">
+                <span>▥</span>
+                Progress
+            </a>
+
+        </nav>
+
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    Your workspace
+                </p>
+
+                <h1>
+                    My Tasks
+                </h1>
+
+                <p class="dashboard-subtext">
+                    Manage your work and stay organized.
+                </p>
+
+            </div>
+
+            <div class="profile-circle">
+                👤
+            </div>
+
+        </header>
+
+
+        <!-- TASK SECTION -->
+
+        <section class="task-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        My Tasks
+                    </h2>
+
+                    <p>
+                        Create and manage your tasks.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="add-task-btn"
+                    onclick="showTaskForm()">
+
+                    + Add Task
+
+                </button>
+
+            </div>
+
+
+            <!-- ADD TASK FORM -->
+
+            <div
+                id="taskForm"
+                class="task-form">
+
+                <h3>
+                    Create New Task
+                </h3>
+
+
+                <input
+                    type="text"
+                    id="taskTitle"
+                    placeholder="Task title">
+
+
+                <input
+                    type="date"
+                    id="taskDate">
+
+
+                <select id="taskPriority">
+
+                    <option value="Low">
+                        Low Priority
+                    </option>
+
+                    <option value="Medium">
+                        Medium Priority
+                    </option>
+
+                    <option value="High">
+                        High Priority
+                    </option>
+
+                </select>
+
+
+                <select id="taskProject">
+
+                    <option value="">
+                        Select Project
+                    </option>
+
+                </select>
+
+
+                <div class="task-form-buttons">
+
+                    <button
+                        class="save-task-btn"
+                        onclick="addTask()">
+
+                        Save Task
+
+                    </button>
+
+
+                    <button
+                        class="cancel-task-btn"
+                        onclick="hideTaskForm()">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TASK LIST -->
+
+            <div
+                id="taskList"
+                class="task-list">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+<div id="deadlineNotifications"></div>
+
+</body>
+
+</html>

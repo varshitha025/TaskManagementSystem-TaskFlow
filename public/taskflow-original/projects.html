@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Projects</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="side-brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+                <h2>TaskFlow</h2>
+                <p>Plan. Track. Achieve.</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="user-dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="my-tasks.html">
+                <span>✓</span>
+                My Tasks
+            </a>
+
+            <a href="projects.html" class="active">
+                <span>▣</span>
+                Projects
+            </a>
+
+            <a href="progress.html">
+                <span>▥</span>
+                Progress
+            </a>
+
+        </nav>
+
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    Organize your work
+                </p>
+
+                <h1>
+                    My Projects
+                </h1>
+
+                <p class="dashboard-subtext">
+                    Organize related tasks into projects.
+                </p>
+
+            </div>
+
+            <div class="profile-circle">
+                👤
+            </div>
+
+        </header>
+
+
+        <!-- PROJECT SECTION -->
+
+        <section class="task-section project-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        My Projects
+                    </h2>
+
+                    <p>
+                        Create and manage your projects.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="add-task-btn"
+                    onclick="showProjectForm()">
+
+                    + Create Project
+
+                </button>
+
+            </div>
+
+
+            <!-- PROJECT FORM -->
+
+            <div
+                id="projectForm"
+                class="task-form">
+
+                <h3>
+                    Create New Project
+                </h3>
+
+
+                <input
+                    type="text"
+                    id="projectName"
+                    placeholder="Project name">
+
+
+                <input
+                    type="text"
+                    id="projectDescription"
+                    placeholder="Project description">
+
+
+                <div class="task-form-buttons">
+
+                    <button
+                        class="save-task-btn"
+                        onclick="addProject()">
+
+                        Create Project
+
+                    </button>
+
+
+                    <button
+                        class="cancel-task-btn"
+                        onclick="hideProjectForm()">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT LIST -->
+
+            <div
+                id="projectList"
+                class="project-list">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Progress</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="side-brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+                <h2>TaskFlow</h2>
+                <p>Plan. Track. Achieve.</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="user-dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="my-tasks.html">
+                <span>✓</span>
+                My Tasks
+            </a>
+
+            <a href="projects.html">
+                <span>▣</span>
+                Projects
+            </a>
+
+            <a href="progress.html" class="active">
+                <span>▥</span>
+                Progress
+            </a>
+
+        </nav>
+
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    Track your productivity
+                </p>
+
+                <h1>
+                    Progress
+                </h1>
+
+                <p class="dashboard-subtext">
+                    Track your overall task completion.
+                </p>
+
+            </div>
+
+            <div class="profile-circle">
+                👤
+            </div>
+
+        </header>
+
+
+        <!-- PROGRESS -->
+
+        <section class="task-section progress-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Progress
+                    </h2>
+
+                    <p>
+                        Track your overall task completion.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="progress-box">
+
+                <div class="progress-info">
+
+                    <span>
+                        Overall Progress
+                    </span>
+
+                    <strong id="progressPercentage">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        id="progressFill"
+                        class="progress-fill">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="side-brand">
+
+            <div class="logo">✓</div>
+
+            <div>
+                <h2>TaskFlow</h2>
+                <p>Plan. Track. Achieve.</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="user-dashboard.html" class="active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="my-tasks.html">
+                <span>✓</span>
+                My Tasks
+            </a>
+
+            <a href="projects.html">
+                <span>▣</span>
+                Projects
+            </a>
+
+            <a href="progress.html">
+                <span>▥</span>
+                Progress
+            </a>
+
+        </nav>
+
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- DASHBOARD -->
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    Welcome back!
+                </p>
+
+                <h1 id="userName">
+                    User
+                </h1>
+
+                <p class="dashboard-subtext">
+                    Here's what's happening with your tasks today.
+                </p>
+
+            </div>
+
+
+            <!-- PROFILE BUTTON -->
+            <button
+                class="profile-circle"
+                type="button"
+                onclick="openProfile()">
+
+                👤
+
+            </button>
+
+        </header>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Total Tasks</p>
+                    <h2 id="totalTasks">0</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ◷
+                </div>
+
+                <div>
+                    <p>Pending</p>
+                    <h2 id="pendingTasks">0</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ★
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2 id="completedTasks">0</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- PROFILE POPUP -->
+
+<div id="profileOverlay" class="profile-overlay">
+
+    <div class="profile-popup">
+
+        <button
+            class="profile-close"
+            type="button"
+            onclick="closeProfile()">
+
+            ×
+
+        </button>
+
+
+        <div class="profile-picture" id="profilePicture">
+
+            👤
+
+        </div>
+
+
+        <h2 id="profileName">
+            User
+        </h2>
+
+        <p id="profileEmail">
+            user@email.com
+        </p>
+
+
+        <label class="profile-upload">
+
+            Change Profile Picture
+
+            <input
+                type="file"
+                id="profileImageInput"
+                accept="image/*"
+                onchange="changeProfilePicture(event)">
+
+        </label>
+
+
+        <div class="profile-details">
+
+            <div class="profile-detail">
+
+                <span>Name</span>
+
+                <strong id="profileNameDetail">
+                    User
+                </strong>
+
+            </div>
+
+
+            <div class="profile-detail">
+
+                <span>Email</span>
+
+                <strong id="profileEmailDetail">
+                    user@email.com
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="change-password-section">
+
+            <h3>
+                Change Password
+            </h3>
+
+
+            <input
+                type="password"
+                id="newPassword"
+                placeholder="Enter new password">
+
+
+            <input
+                type="password"
+                id="confirmNewPassword"
+                placeholder="Confirm new password">
+
+
+            <button
+                type="button"
+                class="change-password-btn"
+                onclick="changePassword()">
+
+                Change Password
+
+            </button>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="profile-done-btn"
+            onclick="closeProfile()">
+
+            Done
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
