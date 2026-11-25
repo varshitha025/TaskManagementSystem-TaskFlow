@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/register", "destination": "/taskflow-original/register.html" },
+    { "source": "/login", "destination": "/taskflow-original/index.html" },
+    { "source": "/admin-login", "destination": "/taskflow-original/admin-login.html" },
+    { "source": "/user-dashboard", "destination": "/taskflow-original/user-dashboard.html" },
+    { "source": "/my-tasks", "destination": "/taskflow-original/my-tasks.html" },
+    { "source": "/projects", "destination": "/taskflow-original/projects.html" },
+    { "source": "/progress", "destination": "/taskflow-original/progress.html" },
+    { "source": "/admin-dashboard", "destination": "/taskflow-original/admin-dashboard.html" },
+    { "source": "/admin-users", "destination": "/taskflow-original/admin-users.html" },
+    { "source": "/admin-projects", "destination": "/taskflow-original/admin-projects.html" },
+    { "source": "/admin-tasks", "destination": "/taskflow-original/admin-tasks.html" }
+  ]
+}
